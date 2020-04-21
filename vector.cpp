@@ -13,6 +13,7 @@ int main()
     vector< vector<int> >v6(2,v3); //2-d vector of row 2 and col same as v3
     vector< vector<int> >v7{{1,2},{3,4}}; //2*2 vector
     vector< vector<int> >v8(5, vector<int>(2,0)); // 5* vector with each element '0' initialized
+    vector<int>v9;
     //Traverse vector  
     //METHOD 1
     for(int i=0;i<v5.size();i++)
@@ -36,6 +37,36 @@ int main()
         cout<<endl;
     }
     cout<<endl;
-
-
+   //Input value from user in vector v1
+   int n; //number of values to be inserted
+   cout<<"Enter the number of value to be inserted\n";
+   cin>>n;
+   v1.resize(n); //resize so that it can accomodate 5 elements.
+   for(int i=0;i<n;i++)
+   {
+       cin>>v1[i];
+   }
+   //traverse v1
+    for(int i=0;i<n;i++)
+    {
+        cout<<v1[i]<<" ";
+    }
+    cout<<endl;
+    /* Suppose you don't want to resize afterall it is a dynamically allocated array, right! */
+   int n1; //number of values to be inserted
+   cout<<"Enter the number of value to be inserted\n";
+   cin>>n1;
+   int num;
+   for(int i=0;i<n1;i++)
+   {
+       cin>>num;
+       v9.push_back(num); //push_back and it will automatically increase size
+   }
+    //traverse v9
+    for(int i=0;i<n1;i++)
+    {
+        cout<<v9[i]<<" ";
+    }
+    cout<<endl;
+    //You could also have used iterator to traverse.
 }
