@@ -28,8 +28,8 @@ int main()
     cout<<endl;
 //Traverse 2-d vector
      for(int i=0;i<2;i++)
-    {
-        for(int j=0;j<v3.size();j++)
+    { //usually as v[i].size();
+        for(int j=0;j<v6[i].size();j++)
         {
             cout<<v6[i][j]<<" ";
         }
