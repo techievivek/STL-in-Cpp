@@ -83,5 +83,13 @@ int main()
      //4. rbegin()
     data=*(v10.rbegin()); //it points to last element
     cout<<data<<endl;
-    //5. insert()
+    //5. insert(pos,value)-> pos before whom you want to insert
+    v10.insert(v10.begin(),-1);
+    v10.insert(v10.begin()+v10.size(),6); 
+     for(int i=0;i<v10.size();i++)
+    {
+        cout<<v10[i]<<" ";
+    }
+    cout<<endl;
+
 }
