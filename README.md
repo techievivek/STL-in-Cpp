@@ -9,6 +9,7 @@ Probably most detailed explanation, syntax, example for various STL containers i
 > acquired knowledge
 > if you have not
 > imparted it to others.*
+>
 Your contribution, suggestion is always welcome.
 1. Fork the repo to your GitHub account.
 2. Clone your forked repo in your local computer.
