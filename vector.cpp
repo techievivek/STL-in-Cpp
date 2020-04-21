@@ -69,4 +69,19 @@ int main()
     }
     cout<<endl;
     //You could also have used iterator to traverse.
+    /* -------------------- Important methods -----------------------*/
+    vector<int>v10{1,2,3,4,5};
+    //1. begin()
+    int data=*(v10.begin());
+    cout<<data<<endl;
+    //2. end()
+    data=*(v10.end()-1); //it points to next imaginary element to last element
+    cout<<data<<endl;
+    //3. rend()
+    data=*(v10.rend()-1);//it points to previous element of first element
+    cout<<data<<endl;
+     //4. rbegin()
+    data=*(v10.rbegin()); //it points to last element
+    cout<<data<<endl;
+    //5. insert()
 }
