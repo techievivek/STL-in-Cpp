@@ -91,5 +91,12 @@ int main()
         cout<<v10[i]<<" ";
     }
     cout<<endl;
-
+    //6. erase(start pos, end pos)-> excluding end pos
+    v10.erase(v10.begin(),v10.begin()+2); //
+    for(int i=0;i<v10.size();i++)
+    {
+        cout<<v10[i]<<" ";
+    }
+    cout<<endl;
+    //7. clear() -> clears the whole vector
 }
