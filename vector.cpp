@@ -13,11 +13,20 @@ int main()
     vector< vector<int> >v6(2,v3); //2-d vector of row 2 and col same as v3
     vector< vector<int> >v7{{1,2},{3,4}}; //2*2 vector
     vector< vector<int> >v8(5, vector<int>(2,0)); // 5* vector with each element '0' initialized
+    //Traverse vector  
+    //METHOD 1
     for(int i=0;i<v5.size();i++)
     {
         cout<<v5[i]<<" ";
     }
     cout<<endl;
+    //METHOD 2
+    for(auto it=v4.begin();it!=v4.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+//Traverse 2-d vector
      for(int i=0;i<2;i++)
     {
         for(int j=0;j<v3.size();j++)
