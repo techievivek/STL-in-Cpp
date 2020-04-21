@@ -86,6 +86,7 @@ int main()
     //5. insert(pos,value)-> pos before whom you want to insert
     v10.insert(v10.begin(),-1);
     v10.insert(v10.begin()+v10.size(),6); 
+    //multiple values like v10.insert(v.10.begin()+2,{10,20,30});
      for(int i=0;i<v10.size();i++)
     {
         cout<<v10[i]<<" ";
@@ -99,4 +100,16 @@ int main()
     }
     cout<<endl;
     //7. clear() -> clears the whole vector
+    //8. assign(size, value)-> it assigns new value to vector v10.assign(10,3), new vector of size 10 with value 3
+    //9. push_back()
+    //10. pop_back()-> to remove elements from back
+
+    //11. front() -> returns value of first element in vector
+    cout<<v10.front()<<" ";
+
+    //12. back() -> returns value of last element in vector
+    cout<<v10.back()<<" ";
+
+    //13. empty() -> returns 0/1 on whether or not vector in empty.
+    //14.swap(vector2) -> Swap the vector with another vector
 }
