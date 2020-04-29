@@ -112,4 +112,13 @@ int main()
 
     //13. empty() -> returns 0/1 on whether or not vector in empty.
     //14.swap(vector2) -> Swap the vector with another vector
+    
+    //For in loop for vector
+    cout<<endl;
+    vector<int>v11{1,2,3,4,5};
+    for(auto x: v11)
+    {
+        cout<<x<<" "; 
+    }
+    cout<<endl;
 }
